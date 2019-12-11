@@ -55,6 +55,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -77,7 +78,7 @@
     <property name="JPA.DatabaseSchemaImportDialog" value="33ac553c-f2ae-4d2b-b695-b3461fd31f82" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mybatis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChromeCoreDownloads/Git-2.24.0.2-64-bit.exe" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -242,7 +243,7 @@
       <workItem from="1575952774046" duration="2025000" />
       <workItem from="1575977676194" duration="2041000" />
       <workItem from="1576023801511" duration="5166000" />
-      <workItem from="1576031393383" duration="15528000" />
+      <workItem from="1576031393383" duration="17491000" />
     </task>
     <servers />
   </component>
