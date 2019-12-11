@@ -12,8 +12,10 @@ public interface ModuleService {
 
     /**
      * 树形菜单
-     * @param pid
+     * @param
      * @return
      */
-    public List<Module> getModules(int pid) ;
+//    public List<Module> getModules(String pid) ;
+
+    public List<Module> getModulesAll();//主
 }

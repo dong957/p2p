@@ -11,14 +11,28 @@
         <result column="url" property="url" javaType="java.lang.String"></result>
         <result column="sort" property="sort" javaType="java.lang.Integer"></result>
 
-
+        <!--<collection property="childrens" ofType="com.zking.p2p.model.Module">
+            <id column="id" property="id" javaType="java.lang.String"></id>
+            <result column="pid" property="pid" javaType="java.lang.String"></result>
+            <result column="text" property="text" javaType="java.lang.String"></result>
+            <result column="icon" property="icon" javaType="java.lang.String"></result>
+            <result column="url" property="url" javaType="java.lang.String"></result>
+            <result column="sort" property="sort" javaType="java.lang.Integer"></result>
+        </collection>
+-->
     </resultMap>
 
 
 
-    <select id="getModules" resultType="com.zking.p2p.model.Module">
-    select * from t_module
-    where pid=#{pid}
+    <select id="getModules" resultMap="row">
 
+        select * from t_module
+        where pid= #{pid}
+
+    </select>
+
+
+    <select id="getModulesAll" resultType="com.zking.p2p.model.Module">
+        select  *  from  t_module  where pid='-1'
     </select>
 </mapper>

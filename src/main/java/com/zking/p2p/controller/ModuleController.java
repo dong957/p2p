@@ -22,11 +22,29 @@ public class ModuleController {
     @RequestMapping("/root/module")
     public Object getModules(){
 
-        List<Module> myl=ModuleService.getModules(-1);
+        List<Module> myl=ModuleService.getModulesAll();//根据pid查询
         DataProtocol data=new DataProtocol();
+       /*  if(myl !=null && myl.size()>=0){
+            for(Module m:myl) {
+                if (m.getPid().equals("-1")) {
+                    List<Module> lis = ModuleService.getModules(m.getId());
+                    m.setChildrens(lis);'
+                      data.setCode(DataProtocol.success);
+                      data.setData(myl);
+                      data.setMessage("操作成功");
+
+
+                }
+            }
+        }else {
+
+         }
+*/
         data.setCode(DataProtocol.success);
         data.setData(myl);
         data.setMessage("操作成功");
+
+
         return data;
 
     }

@@ -16,7 +16,9 @@ public interface ModuleMapper {
      * @param pid
      * @return
      */
-    public List<Module> getModules(int pid) ;
+    public List<Module> getModules(String pid) ;
+
+    public List<Module> getModulesAll();//第一级
 
 
 }

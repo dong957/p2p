@@ -27,7 +27,10 @@ public class DataProtocol extends HashMap<String ,Object> {
         this.put("data",data);
 
     }
+    public void setChildrens(Object childrens){
+        this.put("childrens",childrens);
 
+    }
     public void setErrors(Map<String,String> errors){
         this.put("errors",errors);
 

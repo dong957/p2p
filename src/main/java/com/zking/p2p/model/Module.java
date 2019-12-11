@@ -2,6 +2,8 @@ package com.zking.p2p.model;
 
 import lombok.ToString;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -16,6 +18,15 @@ public class Module {
     private String icon;
     private String url;
     private Integer sort;
+    private List<Module> childrens = new ArrayList<>();
+
+    public List<Module> getChildrens() {
+        return childrens;
+    }
+
+    public void setChildrens(List<Module> childrens) {
+        this.childrens = childrens;
+    }
 
     public String getId() {
         return id;
